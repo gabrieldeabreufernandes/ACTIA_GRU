@@ -34,6 +34,7 @@ public class  GeofenceTransitionsIntentService extends IntentService {
     private static final String TAG = "GTIntentService";
 
     private MediaPlayer mMediaPlayer = null;
+    private MusicPlayer mPlayer = null;
 
     //String BASE_PATH = "/sdcard/E1GRU/"; //Moto G Path
     private String BASE_PATH = "/mnt/extsd/E1GRU/"; //E1 path
@@ -264,29 +265,38 @@ public class  GeofenceTransitionsIntentService extends IntentService {
             default:
                 return mResources.getString(R.string.unknown_geofence_error);
         }
-
     }
 
     //GAFR
     private void loadIndication() {
 
-        mMediaPlayer = new MediaPlayer();
-        //mMediaPlayer.setOnCompletionListener(this);
-
+        //mMediaPlayer = new MediaPlayer();
+        if (mMediaPlayer == null){
+            mMediaPlayer = new MediaPlayer();
+        }
         Log.i(TAG, "loadIndication running ");
         Log.i(TAG, "LAT: "+ this.latitude);
         Log.i(TAG, "LONG: "+ this.longitude);
-        setNewAudioDataFile();
+        //setNewAudioDataFile();
+
+        mPlayer = new MusicPlayer();
+        mPlayer.SetStopPoint(this.Buff);
+        try {
+            mPlayer.Prepare();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mPlayer.Play();
+        //mPlayer.Finalize();
     }
 
     //GAFR
+    /*
     private void setNewAudioDataFile() {
         try {
             String audioPath = AUDIO_PATH + "error";
             String audioPath_es = AUDIO_PATH + "error";
             String audioPath_en = AUDIO_PATH + "error";
-
-            //if((this.geofenceCurrent == "Entered: 39 ")||((this.geofenceCurrent == "Entered: 39"))){
 
             int buff = Integer.parseInt(this.Buff);
 
@@ -294,34 +304,24 @@ public class  GeofenceTransitionsIntentService extends IntentService {
                 audioPath = AUDIO_PATH + "terminal1_en.wav";
                 audioPath_es = AUDIO_PATH + "terminal1_es.wav";
                 audioPath_en = AUDIO_PATH + "terminal1_pt.wav";
-
                 Log.d(TAG, "setNewAudioDataFile = " + audioPath);
             }else if(buff == 1){
                 audioPath = AUDIO_PATH + "terminal2_en.wav";
                 audioPath_es = AUDIO_PATH + "terminal2_es.wav";
                 audioPath_en = AUDIO_PATH + "terminal2_pt.wav";
-
                 Log.d(TAG, "setNewAudioDataFile = " + audioPath);
             }else if(buff == 2){
                 audioPath = AUDIO_PATH + "terminal3_en.wav";
                 audioPath_es = AUDIO_PATH + "terminal3_es.wav";
                 audioPath_en = AUDIO_PATH + "terminal3_pt.wav";
-
                 Log.d(TAG, "setNewAudioDataFile = " + audioPath);
             }else{
                 Log.d(TAG, "setNewAudioDataFile = Point is not 1 or 2 or 3!!");
             }
 
-            //String audioPath = "/sdcard/Music/fado/CesarPassarinho/1_Cambichos.mp3";
-            //Log.d(TAG, "setNewAudioDataFile = " + audioPath);
-            //mMediaPlayer.reset();
             mMediaPlayer.setDataSource(audioPath);
             mMediaPlayer.prepare();
             mMediaPlayer.start();
-            //mMediaPlayer.stop();
-            //mMediaPlayer.reset();
-            //mMediaPlayer.release();
-            //mMediaPlayer = null;
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -330,4 +330,5 @@ public class  GeofenceTransitionsIntentService extends IntentService {
         mMediaPlayer.release();
         mMediaPlayer = null;
     }
+    */
 }

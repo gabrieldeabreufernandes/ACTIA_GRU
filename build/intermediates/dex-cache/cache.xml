@@ -3,39 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.2.0_67b51bfc17d68c1e21da71d881b6d4cbd31cfe6b.jar" />
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.2.0_5c861ccd291f2a54014f0c48e57dd1a9369c8171.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\libs\jdom-1.1.1-android-fork.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0b1ba1072f0c122bec61da7b7fb9e0ec4ad84837">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\instant-run_3437ba488c251358d7d308ea0d96961b30aa135e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_73219128ca8b961b9702b07dadf4e08ae322a2f8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2f7aeba9bc47d1dc2e4bc4a7b0a3292688f456d5">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_df35c4636aa204d232f7336a9f9930e2c22ed0ab.jar" />
+        sha1="936e2a877cacca2108b619bbc718d1550299b106">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\jdom-1.1.1-android-fork_278a3e74efdf6055af119fbdaad0047afc22e229.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,6 +39,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="177cb6cf8366c25f55bbc19ec6cf720a15254762">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_6d74d514130c4ce3152e2b3924ce50a5ad4dc422.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\libs\android-rome-feed-reader-1.0.0-r2.jar"
         jumboMode="true"
         optimize="true"
@@ -66,12 +57,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_3cf0a00132ee070fd02249c7eed7ffa4b59575b6.jar" />
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.0_04ba0a4a91c776f9b07d9013ed2d7bef382e0308.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-10.2.0_f3a495c4c02ad473488202c096e7bafc9eec14d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.2.0_fc548c81be5f54f194625b9e000cdbb27c2627a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-10.2.0_66273637a7921876b34bf0d577776395a791a83e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -81,15 +99,6 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_33e02b220338dfcbbd5f7fa71201d62dd95b69e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.0_e4f254f20fee45a9021ba0e36c57cb407e62e8a7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,6 +138,177 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_67ae13d360c8be5c19dca8ea3ad59959672d46b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.2.0_342b7358b75b625c42a3c61bdc66e456c36ab5c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\libs\gson-2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\gson-2.2.4_57064be14b4452021ad1272b46016721d72af3b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\libs\pl2303driver.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cdcdf1b11d1cc4b2be72e5d1f37bd9ecaaf3a01f">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\pl2303driver_e057c6e1d437dbfbf6490472222c3b70d8bfa708.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_dff5ed103ff029fa4d278007598b62e9680102e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_4e196e121f753dbb424aa4d829b35cdcefee9769.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_7e42ac6903f1ac475248c48960f7728e881ca240.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.2.0_67b51bfc17d68c1e21da71d881b6d4cbd31cfe6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0b1ba1072f0c122bec61da7b7fb9e0ec4ad84837">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\instant-run_3437ba488c251358d7d308ea0d96961b30aa135e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_73219128ca8b961b9702b07dadf4e08ae322a2f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f7aeba9bc47d1dc2e4bc4a7b0a3292688f456d5">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_df35c4636aa204d232f7336a9f9930e2c22ed0ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\libs\pl2303driver.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cdcdf1b11d1cc4b2be72e5d1f37bd9ecaaf3a01f">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\pl2303driver_bb2525b5df337bfb778c2094562cc25b4478da65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_3cf0a00132ee070fd02249c7eed7ffa4b59575b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.0_e4f254f20fee45a9021ba0e36c57cb407e62e8a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d71330f29eb09fb0fd0b1624249565e03e43c80c">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\instant-run_0dd41dfb0a1149b7716d50dfa13c0f296d0fa27f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.2.0_578b104195b02cc23873cf6dd8dbd87bdf154714.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_8d0c0689edf186c2bc38f39cd621c3a76e74f3b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.2.0_c6d85df18558afb40f0e3688f2293c4cfa2a188f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\libs\android-rome-feed-reader-1.0.0-r2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="868c7f0ce1e544561bc3222aefa060a007e1642b">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\android-rome-feed-reader-1.0.0-r2_086270fc41343e35a83235ce621fac99d151aab9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -144,6 +324,15 @@
         revision="25.0.2"
         sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
         <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_bb4551a9c171ff262ce4734c88819bf2d26db4e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_45afef5525640095b5dd62761778b8efeb61ea07.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,30 +354,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\SKYNET\Documents\GitHub\ACTIA_GRU\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_45a619f12452bfc9f2dc9cde68c9f6a2c5988c51.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
         <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_9f2a5e2d5c8c6a8543d3be2449ad8092cda86cb5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\libs\pl2303driver.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cdcdf1b11d1cc4b2be72e5d1f37bd9ecaaf3a01f">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\pl2303driver_e057c6e1d437dbfbf6490472222c3b70d8bfa708.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\SKYNET\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\Users\SKYNET\Documents\GitHub\E1\ANDROID\AndroidGeofencesSample\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_dff5ed103ff029fa4d278007598b62e9680102e0.jar" />
     </item>
 
 </items>

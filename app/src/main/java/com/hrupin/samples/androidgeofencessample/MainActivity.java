@@ -7,7 +7,9 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +36,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.hrupin.samples.androidgeofencessample.db.GeofenceContract;
 import com.hrupin.samples.androidgeofencessample.db.GeofenceStorage;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements
     public static final String NEW_GEOFENCE_NUMBER = BuildConfig.APPLICATION_ID + ".NEW_GEOFENCE_NUMBER";
     public static final long GEOFENCE_EXPIRATION_IN_HOURS = 12;
     public static final long GEOFENCE_EXPIRATION_IN_MILLISECONDS = GEOFENCE_EXPIRATION_IN_HOURS * 60 * 60 * 1000;
-    public static final float GEOFENCE_RADIUS_IN_METERS = 100; // 100 m
+    public static final float GEOFENCE_RADIUS_IN_METERS = 50; // 100 m
     private static final int PERMISSIONS_REQUEST = 105;
 
     protected GoogleApiClient mGoogleApiClient;
@@ -90,6 +93,15 @@ public class MainActivity extends AppCompatActivity implements
         //if (gps == null){
         //    GPSTracker gps = new GPSTracker(this);
         //}
+
+        File file = Environment.getExternalStorageDirectory();
+        Log.i(TAG, "GAAAAAAAAAAFR :: SD paht :" + file);
+
+        File file2 = Environment.getDataDirectory();
+        Log.i(TAG, "GAAAAAAAAAAFR :: Data paht :" + file2);
+
+        File file3 = Environment.getRootDirectory();
+        Log.i(TAG, "GAAAAAAAAAAFR :: Root paht :" + file3);
     }
 
     @Override
@@ -233,14 +245,10 @@ public class MainActivity extends AppCompatActivity implements
                     if (status.isSuccess()) {
                         GeofenceStorage.saveToDb(key, latLng, expTime);
                         Toast.makeText(MainActivity.this, getString(R.string.geofences_added), Toast.LENGTH_SHORT).show();
-
                         //geoFence.setGeoStorage(GeofenceStorage);
-
                     } else {
                         String errorMessage = GeofenceTransitionsIntentService.getErrorString(MainActivity.this, status.getStatusCode());
                         Log.e(TAG, errorMessage);
-
-
                     }
                 }
             });

@@ -12,6 +12,7 @@ import android.location.Location;
 import android.media.MediaPlayer;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Environment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.text.TextUtils;
@@ -23,6 +24,7 @@ import com.google.android.gms.location.GeofenceStatusCodes;
 import com.google.android.gms.location.GeofencingEvent;
 import com.hrupin.samples.androidgeofencessample.db.GeofenceStorage;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,42 +32,35 @@ import java.util.List;
 /**
  * Gabriel Fernandes 12/17.
  */
-public class  GeofenceTransitionsIntentService extends IntentService {
+public class  GeofenceTransitionsIntentService extends IntentService implements MediaPlayer.OnCompletionListener {
     private static final String TAG = "GTIntentService";
 
     private MediaPlayer mMediaPlayer = null;
     private MusicPlayer mPlayer = null;
 
-    //String BASE_PATH = "/sdcard/E1GRU/"; //Moto G Path
-    private String BASE_PATH = "/mnt/extsd/E1GRU/"; //E1 path
-    private String IMAGE_PATH = BASE_PATH + "image/";
+    private String BASE_PATH = "/mnt/internal_sd/E1GRU/"; //E1-PRO //internal_sd
     private String AUDIO_PATH = BASE_PATH + "audio/";
-    private String VIDEO_PATH = BASE_PATH + "video/";
-    private String GPS_FILE = BASE_PATH + "GPS_GRU.json";
-    private String IMG_BACKGROUND = IMAGE_PATH + "bg.png";
+    private String sStopPoint = null;
+    private int iStopPoint;
 
     GPSTracker gps = null;
     private double latitude;
     private double longitude;
-    //private double latitudeGeo1;
-    //private double longitudeGeo1;
-    //private double latitudeGeo2;
-    //private double longitudeGeo2;
-    //private double latitudeGeo3;
-    //private double longitudeGeo3;
     private String geofenceCurrent;
     private String Buff;
 
     private GeofenceStorage geofenceStorage = null;
     private Context mContext = null;
 
+    private int gFenceType;
+
     public GeofenceTransitionsIntentService() {
         super("GeofenceTransitionsIntentService");
         mContext = null;
+        mPlayer = new MusicPlayer();
     }
 
     public void setGeoStorage(GeofenceStorage geoStoreage) {
-
         Log.i(TAG, "Tryng setGeoStorage ");
 
         if (gps == null){
@@ -79,20 +74,16 @@ public class  GeofenceTransitionsIntentService extends IntentService {
     }
 
     public void setContext(Context ctx) {
-
-        Log.i(TAG, "Tryng setContext");
-
-        if (gps == null){
-            //this.gps = new GPSTracker(ctx.getApplicationContext());
-            Log.i(TAG, "Seting Context...");
-            mContext = ctx.getApplicationContext();
-            Toast.makeText(mContext, "CONTEXT SETED!!!!", Toast.LENGTH_LONG).show();
-
-        }else{
-            Log.i(TAG, "Context already seted!");
-        }
+        //if (gps == null){
+        //this.gps = new GPSTracker(ctx.getApplicationContext());
+        //Log.i(TAG, "Seting Context...");
+        mContext = ctx.getApplicationContext();
+        Log.i(TAG, "CONTEXT SETED!!!!");
+        //Toast.makeText(mContext, "CONTEXT SETED!!!!", Toast.LENGTH_LONG).show();
+        //}else{
+        //    Log.i(TAG, "Context already seted!");
+        //}
     }
-
 
     @Override
     protected void onHandleIntent(Intent intent) {
@@ -105,15 +96,9 @@ public class  GeofenceTransitionsIntentService extends IntentService {
             return;
         }
         int geofenceTransition = geofencingEvent.getGeofenceTransition();
-         //geofenceTransition = geofencingEvent.getGeofenceTransition();
-
 
         Location location = geofencingEvent.getTriggeringLocation();
         Log.d(TAG, "LocationC: " + location.getLatitude() + ", " + location.getLongitude());
-
-        //this.latitudeGeo1 = location.getLatitude();
-        //this.longitudeGeo1 = location.getLongitude();
-
 
         if(mContext!= null){
             Toast.makeText(mContext, "location: "+location, Toast.LENGTH_LONG).show();
@@ -123,7 +108,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
 
         if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER ||
                 geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT) {
-
 
             Log.i("GAAAAAAAAAAAAAAAAAAAAR", "GEOFENCE_TRANSITION_ENTER !!!");
 
@@ -139,7 +123,7 @@ public class  GeofenceTransitionsIntentService extends IntentService {
             this.geofenceCurrent = geofenceTransitionDetails;
             Log.i("GAAAAAAAAAAAAAAAAAAAAR","this.geofenceCurrent:"+this.geofenceCurrent);
 
-                    ///*
+            ///*
             if(gps != null){
                 Log.d(TAG, "gps OK ");
                 // verifica ele
@@ -147,7 +131,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
                     // passa sua latitude e longitude para duas variaveis
                     this.latitude = gps.getLatitude();
                     this.longitude = gps.getLongitude();
-
                     // e mostra no Toast
                     //Toast.makeText(getApplicationContext(), "Sua localização - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
                     Log.d(TAG, "LAT: "+latitude);
@@ -160,9 +143,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
                 Log.d(TAG, "gps NOT OK ");
             }
             //*/
-
-
-
 
             // Send notification and log the transition details.
             sendNotification(geofenceTransitionDetails);
@@ -177,7 +157,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
             int geofenceTransition,
             List<Geofence> triggeringGeofences) {
 
-
         String geofenceTransitionString = getTransitionString(geofenceTransition);
         ArrayList triggeringGeofencesIdsList = new ArrayList();
 
@@ -185,7 +164,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
             triggeringGeofencesIdsList.add(geofence.getRequestId());
             Buff = geofence.getRequestId();
             Log.i("GAAAAAAFR", "Buff:"+Buff);
-
         }
         String triggeringGeofencesIdsString = TextUtils.join(", ",  triggeringGeofencesIdsList);
 
@@ -196,8 +174,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
         //MapView mapView = (MapView) findViewById(R.id.map_view) ;
         //mapView.setClickable(true) ;
         //int measure = mapView.getMeasuredState();
-
-
     }
 
     /**
@@ -231,7 +207,7 @@ public class  GeofenceTransitionsIntentService extends IntentService {
         loadIndication();
 
         // Issue the notification
-        //mNotificationManager.notify(0, builder.build());
+        mNotificationManager.notify(0, builder.build());
     }
 
     /**
@@ -241,6 +217,7 @@ public class  GeofenceTransitionsIntentService extends IntentService {
      * @return                  A String indicating the type of transition
      */
     private String getTransitionString(int transitionType) {
+        this.gFenceType = transitionType;
         switch (transitionType) {
             case Geofence.GEOFENCE_TRANSITION_ENTER:
                 return getString(R.string.geofence_transition_entered);
@@ -250,7 +227,6 @@ public class  GeofenceTransitionsIntentService extends IntentService {
                 return getString(R.string.unknown_geofence_transition);
         }
     }
-
 
     public static String getErrorString(Context context, int errorCode) {
         Resources mResources = context.getResources();
@@ -267,68 +243,133 @@ public class  GeofenceTransitionsIntentService extends IntentService {
         }
     }
 
+    private void  SetStopPoint(String point){
+        this.sStopPoint = point;
+        this.iStopPoint = Integer.parseInt(this.sStopPoint);
+        Log.d(TAG, "::SetStopPoint::"+this.sStopPoint);
+    }
+
+
     //GAFR
     private void loadIndication() {
 
-        //mMediaPlayer = new MediaPlayer();
-        if (mMediaPlayer == null){
-            mMediaPlayer = new MediaPlayer();
-        }
-        Log.i(TAG, "loadIndication running ");
-        Log.i(TAG, "LAT: "+ this.latitude);
-        Log.i(TAG, "LONG: "+ this.longitude);
-        //setNewAudioDataFile();
+        final MediaPlayer mpp;
+        final MediaPlayer mpp2;
+        MediaPlayer mpp3 = null;
 
-        mPlayer = new MusicPlayer();
-        mPlayer.SetStopPoint(this.Buff);
-        try {
-            mPlayer.Prepare();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        mPlayer.Play();
-        //mPlayer.Finalize();
-    }
+        Log.i(TAG, "loadIndication running...");
 
-    //GAFR
-    /*
-    private void setNewAudioDataFile() {
-        try {
-            String audioPath = AUDIO_PATH + "error";
-            String audioPath_es = AUDIO_PATH + "error";
-            String audioPath_en = AUDIO_PATH + "error";
+        SetStopPoint(this.Buff);
 
-            int buff = Integer.parseInt(this.Buff);
-
-            if(buff == 0){
-                audioPath = AUDIO_PATH + "terminal1_en.wav";
-                audioPath_es = AUDIO_PATH + "terminal1_es.wav";
-                audioPath_en = AUDIO_PATH + "terminal1_pt.wav";
-                Log.d(TAG, "setNewAudioDataFile = " + audioPath);
-            }else if(buff == 1){
-                audioPath = AUDIO_PATH + "terminal2_en.wav";
-                audioPath_es = AUDIO_PATH + "terminal2_es.wav";
-                audioPath_en = AUDIO_PATH + "terminal2_pt.wav";
-                Log.d(TAG, "setNewAudioDataFile = " + audioPath);
-            }else if(buff == 2){
-                audioPath = AUDIO_PATH + "terminal3_en.wav";
-                audioPath_es = AUDIO_PATH + "terminal3_es.wav";
-                audioPath_en = AUDIO_PATH + "terminal3_pt.wav";
-                Log.d(TAG, "setNewAudioDataFile = " + audioPath);
+        //ENTERING TERMINAL 1
+        if(this.iStopPoint == 0){
+            Log.i(TAG, "MediaPlayer creation for Entering to Point 1!!!");
+            //if(this.gFenceType == Geofence.GEOFENCE_TRANSITION_ENTER){
+            mpp = MediaPlayer.create(this, R.raw.terminal1_pt);
+            mpp2 = MediaPlayer.create(this, R.raw.terminal1_en);
+            if(mpp != null){
+                Log.i(TAG, "MediaPlayer creation for Point 1!!!");
+                mpp.start();
+                mpp.setNextMediaPlayer(mpp2);
             }else{
-                Log.d(TAG, "setNewAudioDataFile = Point is not 1 or 2 or 3!!");
+                Log.i(TAG, "error during MediaPlayer creation!!!");
             }
+            //}
 
-            mMediaPlayer.setDataSource(audioPath);
-            mMediaPlayer.prepare();
-            mMediaPlayer.start();
+        //EXITING TERMINAL 1
+        }else if(this.iStopPoint == 1){
+            Log.i(TAG, "MediaPlayer creation for Exiting to Point 1!!!");
+            //if(this.gFenceType == Geofence.GEOFENCE_TRANSITION_ENTER){
+            mpp = MediaPlayer.create(this, R.raw.terminal2_pt);
+            mpp2 = MediaPlayer.create(this, R.raw.terminal2_en);
+            mpp3 = MediaPlayer.create(this, R.raw.terminal2_es);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        };
-        mMediaPlayer.reset();
-        mMediaPlayer.release();
-        mMediaPlayer = null;
+            if(mpp != null){
+                Log.i(TAG, "MediaPlayer creation entering of the Point 2!!!");
+                mpp.start();
+                mpp.setNextMediaPlayer(mpp2);
+                mpp.setNextMediaPlayer(mpp3);
+                //mpp3.start();
+            }else{
+                Log.i(TAG, "error during MediaPlayer creation!!!");
+            }
+            //}
+
+        //ENTERING TERMINAL 2
+        }else if(this.iStopPoint == 2){
+            //if(this.gFenceType == Geofence.GEOFENCE_TRANSITION_ENTER){
+            mpp = MediaPlayer.create(this, R.raw.terminal2_pt);
+            mpp2 = MediaPlayer.create(this, R.raw.terminal2_en);
+            mpp3 = MediaPlayer.create(this, R.raw.terminal2_es);
+
+            if(mpp != null){
+                Log.i(TAG, "MediaPlayer creation for entering of the Point 3!!!");
+                mpp.start();
+                mpp.setNextMediaPlayer(mpp2);
+                mpp.setNextMediaPlayer(mpp3);
+            }else{
+                Log.i(TAG, "error during MediaPlayer creation!!!");
+            }
+            //}
+
+        //EXITING TERMINAL 2
+        }else if(this.iStopPoint == 3){
+            //if(this.gFenceType == Geofence.GEOFENCE_TRANSITION_ENTER){
+            mpp = MediaPlayer.create(this, R.raw.terminal3_pt);
+            mpp2 = MediaPlayer.create(this, R.raw.terminal3_en);
+            mpp3 = MediaPlayer.create(this, R.raw.terminal3_es);
+
+            if(mpp != null){
+                Log.i(TAG, "MediaPlayer creation for entering of the Point 3!!!");
+                mpp.start();
+                mpp.setNextMediaPlayer(mpp2);
+                mpp.setNextMediaPlayer(mpp3);
+            }else{
+                Log.i(TAG, "error during MediaPlayer creation!!!");
+            }
+            //}
+
+        //ENTERING TERMINAL 3
+        }else if(this.iStopPoint == 4){
+            //if(this.gFenceType == Geofence.GEOFENCE_TRANSITION_ENTER){
+            mpp = MediaPlayer.create(this, R.raw.terminal3_pt);
+            mpp2 = MediaPlayer.create(this, R.raw.terminal3_en);
+            mpp3 = MediaPlayer.create(this, R.raw.terminal3_es);
+
+            if(mpp != null){
+                Log.i(TAG, "MediaPlayer creation for entering of the Point 3!!!");
+                mpp.start();
+                mpp.setNextMediaPlayer(mpp2);
+                mpp.setNextMediaPlayer(mpp3);
+            }else{
+                Log.i(TAG, "error during MediaPlayer creation!!!");
+            }
+            //}
+
+        //EXITING TERMINAL 3
+        }else if(this.iStopPoint == 5){
+            //if(this.gFenceType == Geofence.GEOFENCE_TRANSITION_ENTER){
+            mpp = MediaPlayer.create(this, R.raw.terminal1_pt);
+            mpp2 = MediaPlayer.create(this, R.raw.terminal1_en);
+            //mpp3 = MediaPlayer.create(this, R.raw.terminal1_es);
+
+            if(mpp != null){
+                Log.i(TAG, "MediaPlayer creation for entering of the Point 3!!!");
+                mpp.start();
+                mpp.setNextMediaPlayer(mpp2);
+                //mpp.setNextMediaPlayer(mpp3);
+            }else{
+                Log.i(TAG, "error during MediaPlayer creation!!!");
+            }
+            //}
+        }
     }
-    */
+
+    @Override
+    public void onCompletion(MediaPlayer mediaPlayer) {
+        Log.e(TAG, "Finalize Running...");
+        mediaPlayer.stop();
+        mediaPlayer.release();
+        //mediaPlayer = null;
+    }
 }

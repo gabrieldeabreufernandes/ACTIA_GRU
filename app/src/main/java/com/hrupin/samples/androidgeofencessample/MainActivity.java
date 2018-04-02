@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements
     public static final String NEW_GEOFENCE_NUMBER = BuildConfig.APPLICATION_ID + ".NEW_GEOFENCE_NUMBER";
     public static final long GEOFENCE_EXPIRATION_IN_HOURS = 12;
     public static final long GEOFENCE_EXPIRATION_IN_MILLISECONDS = GEOFENCE_EXPIRATION_IN_HOURS * 60 * 60 * 1000;
-    public static final float GEOFENCE_RADIUS_IN_METERS = 50; // 100 m
+    public static final float GEOFENCE_RADIUS_IN_METERS = 65; // 100 m
     private static final int PERMISSIONS_REQUEST = 105;
 
     protected GoogleApiClient mGoogleApiClient;
@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity implements
     private PendingIntent mGeofencePendingIntent;
     private SharedPreferences mSharedPreferences;
     private GoogleMap googleMap;
+
+    private Geofence buffGeofence1 = null;
+    private Geofence buffGeofence2 = null;
+    private Geofence buffGeofence3 = null;
 
     GeofenceTransitionsIntentService geoFence = null;
     //GPSTracker gps = null;//new GPSTracker(this);
@@ -72,7 +76,41 @@ public class MainActivity extends AppCompatActivity implements
         mGeofencePendingIntent = null;
         mSharedPreferences = getSharedPreferences(SHARED_PREFERENCES_NAME, MODE_PRIVATE);
         buildGoogleApiClient();
+        clearApplicationData();
     }
+
+    public void clearApplicationData() {
+        Log.d(TAG, "clearApplicationData Running...");
+        File cache = getCacheDir();
+        Log.d(TAG, "cache = " +cache);
+        File appDir = new File(cache.getParent());
+        Log.d(TAG, "appDir = " +appDir);
+        if (appDir.exists()) {
+            String[] children = appDir.list();
+            Log.d(TAG, "children = " +children);
+            for (String s : children) {
+                Log.d(TAG, "s = " +s);
+                if (!s.equals("lib")) {
+                    deleteDir(new File(appDir, s));
+                    Log.i("TAG", "**************** File /data/data/APP_PACKAGE/" + s + " DELETED *******************");
+                }
+            }
+        }
+    }
+    public static boolean deleteDir(File dir) {
+        Log.d(TAG, "deleteDir Running...");
+        if (dir != null && dir.isDirectory()) {
+            String[] children = dir.list();
+            for (int i = 0; i < children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+        return dir.delete();
+    }
+
 
     /**
      * Builds a GoogleApiClient. Uses the {@code #addApi} method to request the LocationServices API.
@@ -88,25 +126,30 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void onStart() {
         super.onStart();
+
+        clearApplicationData();
         mGoogleApiClient.connect();
         //
         //if (gps == null){
         //    GPSTracker gps = new GPSTracker(this);
         //}
+        //File file = Environment.getExternalStorageDirectory();
+        //Log.i(TAG, "GAAAAAAAAAAFR :: SD paht :" + file);
 
-        File file = Environment.getExternalStorageDirectory();
-        Log.i(TAG, "GAAAAAAAAAAFR :: SD paht :" + file);
+        //File file2 = Environment.getDataDirectory();
+        //Log.i(TAG, "GAAAAAAAAAAFR :: Data paht :" + file2);
 
-        File file2 = Environment.getDataDirectory();
-        Log.i(TAG, "GAAAAAAAAAAFR :: Data paht :" + file2);
-
-        File file3 = Environment.getRootDirectory();
-        Log.i(TAG, "GAAAAAAAAAAFR :: Root paht :" + file3);
+        //File file3 = Environment.getRootDirectory();
+        //Log.i(TAG, "GAAAAAAAAAAFR :: Root paht :" + file3);
     }
 
     @Override
     protected void onStop() {
+        Log.d(TAG, "onStop Running...");
         super.onStop();
+        tryReset("0");
+        tryReset("1");
+        tryReset("2");
         mGoogleApiClient.disconnect();
     }
 
@@ -116,6 +159,40 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public void onConnected(Bundle connectionHint) {
         Log.i(TAG, "Connected to GoogleApiClient");
+
+        //ACTIA
+        final double actLa1 = -30.007741;
+        final double actLo1 = -51.204438;
+        //final double actLa2 = -30.006410;
+        //final double actLo2 = -51.203650;
+        //final double actLa3 = -30.007900;
+        //final double actLo3 = -51.201722;
+
+        //T1 = -23.429454;-46.4935208;
+        //-23.428351, -46.493306
+        final double latT1 = -23.428351;
+        final double lonT1 = -46.493306;
+        //T2
+        //-23.424314, -46.484332
+        //-23.423405, -46.484326
+        final double latT2 = -23.423405;
+        final double lonT2 = -46.484326;
+        //T3
+        //-23.422756, -46.477669
+        //-23.423832, -46.479663
+        final double latT3 = -23.423832;
+        final double lonT3 = -46.479663;
+
+        //Garagem In-HAus
+        //-23.420730, -46.480048
+        final double latGar = -23.428351;
+        final double lonGar = -46.493306;
+
+        tryLoad(latT1, lonT1, 0);
+        tryLoad(latT2, lonT2, 1);
+        tryLoad(latT3, lonT3, 2);
+        tryLoad(latGar, lonGar, 3);
+        //tryLoad(actLa1, actLo1, 3);
     }
 
     @Override
@@ -147,6 +224,7 @@ public class MainActivity extends AppCompatActivity implements
 
     private PendingIntent getGeofencePendingIntent() {
         if (mGeofencePendingIntent != null) {
+            Log.d(TAG, "getGeofencePendingIntent:: mGeofencePendingIntent = NULL");
             return mGeofencePendingIntent;
         }
 
@@ -166,6 +244,7 @@ public class MainActivity extends AppCompatActivity implements
     public void onMapReady(GoogleMap map) {
         googleMap = map;
         initMap(googleMap);
+        Log.d(TAG, "onMapReady OOOOOOOOOOOOOOOOOOOOOOKKKKKKKKKK");
     }
 
     private void initMap(GoogleMap map) {
@@ -178,7 +257,88 @@ public class MainActivity extends AppCompatActivity implements
         map.setOnMarkerClickListener(this);
         map.setOnInfoWindowClickListener(this);
 
+        //tryLoad();
         reloadMapMarkers();
+    }
+
+
+    private void tryReset(final String ID){
+        try {
+            List<String> idList = new ArrayList<>();
+            idList.add(ID);
+            LocationServices.GeofencingApi.removeGeofences(mGoogleApiClient, idList).setResultCallback(new ResultCallback<Status>() {
+                @Override
+                public void onResult(@NonNull Status status) {
+                    if (status.isSuccess()) {
+                        Log.e(TAG, "Not success in onResult!!!");
+                        GeofenceStorage.removeGeofence(ID);
+                        Toast.makeText(MainActivity.this, getString(R.string.geofences_removed), Toast.LENGTH_SHORT).show();
+                        reloadMapMarkers();
+                    } else {
+                        // Get the status code for the error and log it using a user-friendly message.
+                        String errorMessage = GeofenceTransitionsIntentService.getErrorString(MainActivity.this,
+                                status.getStatusCode());
+                        Log.e(TAG, errorMessage);
+                        Log.e(TAG, "Not success in onResult!!! = " +errorMessage);
+                    }
+                }
+            });
+        } catch (SecurityException securityException) {
+            logSecurityException(securityException);
+        }
+    }
+
+    //private void tryLoad(){
+    private void tryLoad(final Double lat, final Double lon, int cont){
+
+        //final double lat = -30.007741;//-23.429979;
+        //final double lon = -51.204438;//-46.493521;
+
+        final String key = getNewGeofenceNumber() + "";
+        final long expTime = System.currentTimeMillis() + GEOFENCE_EXPIRATION_IN_MILLISECONDS;
+        //addMarker(key, latLng);
+
+        Geofence geofence = new Geofence.Builder()
+                .setRequestId(key)
+                .setCircularRegion(
+                        lat,
+                        lon,
+                        GEOFENCE_RADIUS_IN_METERS
+                )
+                .setExpirationDuration(GEOFENCE_EXPIRATION_IN_MILLISECONDS)
+                .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER |
+                        Geofence.GEOFENCE_TRANSITION_EXIT)
+                .build();
+
+        if(cont == 0){
+            this.buffGeofence1 = geofence;
+        }else if(cont == 1){
+            this.buffGeofence2 = geofence;
+        }else if(cont == 2){
+            this.buffGeofence3 = geofence;
+        }
+        //String requestID = geofence. getRequestId();
+        try {
+            LocationServices.GeofencingApi.addGeofences(
+                    mGoogleApiClient,
+                    getGeofencingRequest(geofence),
+                    getGeofencePendingIntent()
+            ).setResultCallback(new ResultCallback<Status>() {
+                @Override
+                public void onResult(@NonNull Status status) {
+                    if (status.isSuccess()) {
+                        //GeofenceStorage.saveToDbGAFR(key, lat, lon, expTime);
+                        Toast.makeText(MainActivity.this, getString(R.string.geofences_added), Toast.LENGTH_SHORT).show();
+                        //geoFence.setGeoStorage(GeofenceStorage);
+                    } else {
+                        String errorMessage = GeofenceTransitionsIntentService.getErrorString(MainActivity.this, status.getStatusCode());
+                        Log.e(TAG, errorMessage);
+                    }
+                }
+            });
+        } catch (SecurityException securityException) {
+            logSecurityException(securityException);
+        }
     }
 
     private void reloadMapMarkers() {
@@ -243,12 +403,14 @@ public class MainActivity extends AppCompatActivity implements
                 @Override
                 public void onResult(@NonNull Status status) {
                     if (status.isSuccess()) {
+                        Log.e(TAG, "GAAAFR:: isSuccess");
                         GeofenceStorage.saveToDb(key, latLng, expTime);
                         Toast.makeText(MainActivity.this, getString(R.string.geofences_added), Toast.LENGTH_SHORT).show();
                         //geoFence.setGeoStorage(GeofenceStorage);
                     } else {
                         String errorMessage = GeofenceTransitionsIntentService.getErrorString(MainActivity.this, status.getStatusCode());
                         Log.e(TAG, errorMessage);
+                        Log.e(TAG, "GAAAFR:: onResult = ERROR!!");
                     }
                 }
             });

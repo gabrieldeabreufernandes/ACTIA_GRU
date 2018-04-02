@@ -32,6 +32,25 @@ public class GeofenceStorage {
         }
     }
 
+    public static void saveToDbGAFR(String key, Double Lat, Double Lng, long expires) {
+        GeofenceDbHelper helper = GeofenceDbHelper.get();
+
+        try {
+            ContentValues values = new ContentValues();
+            values.put(GeofenceContract.GeofenceEntry.COLUMN_NAME_KEY, key);
+            values.put(GeofenceContract.GeofenceEntry.COLUMN_NAME_EXPIRES, expires + "");
+            values.put(GeofenceContract.GeofenceEntry.COLUMN_NAME_LAT, Lat + "");
+            values.put(GeofenceContract.GeofenceEntry.COLUMN_NAME_LNG, Lng + "");
+
+            long id = helper.getWritableDatabase().insert(GeofenceContract.GeofenceEntry.TABLE_NAME, null, values);
+
+            Log.i(TAG, "Row inserted id=" + id + ", ContentValues=" + values);
+        }catch (Exception e){
+            e.printStackTrace();
+            Log.e(TAG, "Unable save geofence to db");
+        }
+    }
+
     public static Cursor getCursor(){
         String[] columns = new String[]{GeofenceContract.GeofenceEntry._ID, GeofenceContract.GeofenceEntry.COLUMN_NAME_KEY, GeofenceContract.GeofenceEntry.COLUMN_NAME_LNG, GeofenceContract.GeofenceEntry.COLUMN_NAME_LAT, GeofenceContract.GeofenceEntry.COLUMN_NAME_EXPIRES};
         Cursor cursor = GeofenceDbHelper.get().getReadableDatabase().query(GeofenceContract.GeofenceEntry.TABLE_NAME, columns, null, null, null, null, GeofenceContract.GeofenceEntry._ID + " DESC");

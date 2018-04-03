@@ -8,9 +8,47 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java" line="386" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2058d3d4-0390-458a-b989-85063aefc9ee" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_rome_feed_reader_1_0_0_r2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jdom_1_1_1_android_fork.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/pl2303driver.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_10_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_location_10_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_maps_10_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_10_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_2_0.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/GeofenceTransitionsIntentService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/GeofenceTransitionsIntentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="ACTIA_GRU.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,32 +86,41 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2312">
-              <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+            <state relative-caret-position="213">
+              <caret line="380" column="10" selection-start-line="380" selection-start-column="10" selection-end-line="380" selection-end-column="10" />
               <folding>
-                <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#11640#11687#0" expanded="true" />
+                <element signature="e#11764#11810#0" expanded="true" />
+                <element signature="e#11856#11903#0" expanded="true" />
+                <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#10209#11158#0" expanded="true" />
-                <element signature="e#11157#11158#0" expanded="true" />
-                <element signature="e#12683#13389#0" expanded="true" />
-                <element signature="e#13388#13389#0" expanded="true" />
-                <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#13117#14066#0" expanded="true" />
+                <element signature="e#13467#13504#0" expanded="true" />
+                <element signature="e#14065#14066#0" expanded="true" />
+                <element signature="e#15503#16209#0" expanded="true" />
+                <element signature="e#16208#16209#0" expanded="true" />
                 <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#16111#16934#0" expanded="true" />
-                <element signature="e#16933#16934#0" expanded="true" />
-                <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#18442#19249#0" expanded="true" />
-                <element signature="e#19248#19249#0" expanded="true" />
+                <element signature="e#19845#20668#0" expanded="true" />
+                <element signature="e#20667#20668#0" expanded="true" />
+                <element signature="e#22176#22983#0" expanded="true" />
+                <element signature="e#22982#22983#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeofenceStorage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceStorage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,12 +128,15 @@
       <file leaf-file-name="GeofenceTransitionsIntentService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/GeofenceTransitionsIntentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+            <state relative-caret-position="484">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-                <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+                <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+                <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+                <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+                <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+                <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
               </folding>
             </state>
           </provider>
@@ -1764,6 +1814,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceStorage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/GeofenceTransitionsIntentService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java" />
       </list>
@@ -1800,10 +1851,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1825,6 +1875,76 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACTIA_GRU" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidgeofencessample" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACTIA_GRU" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidgeofencessample" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ACTIA_GRU" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1834,8 +1954,8 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/SVN/E1/actia_e1_gru" />
-    <property name="device.picker.selection" value="0426161675" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GeofenceDemo copy 2" />
+    <property name="device.picker.selection" value="192.168.1.148:5555" />
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -2146,39 +2266,39 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1382" height="754" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32550335" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-8" y="-8" width="1382" height="754" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29026845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33221477" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2194,7 +2314,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2204,28 +2324,166 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
             <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10209#11158#0" expanded="true" />
-            <element signature="e#11157#11158#0" expanded="true" />
-            <element signature="e#12683#13389#0" expanded="true" />
-            <element signature="e#13388#13389#0" expanded="true" />
-            <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#16111#16934#0" expanded="true" />
-            <element signature="e#16933#16934#0" expanded="true" />
-            <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#18442#19249#0" expanded="true" />
-            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="118" column="24" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
+            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
+            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="59" column="54" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceDbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/GeofenceTransitionsIntentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5593">
+          <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
+            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2236,8 +2494,11 @@
           <caret line="534" column="29" selection-start-line="534" selection-start-column="29" selection-end-line="534" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
         </state>
       </provider>
@@ -2247,28 +2508,27 @@
         <state relative-caret-position="1734">
           <caret line="178" column="40" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
           <folding>
-            <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
             <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10209#11158#0" expanded="true" />
-            <element signature="e#11157#11158#0" expanded="true" />
-            <element signature="e#12683#13389#0" expanded="true" />
-            <element signature="e#13388#13389#0" expanded="true" />
-            <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#16111#16934#0" expanded="true" />
-            <element signature="e#16933#16934#0" expanded="true" />
-            <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#18442#19249#0" expanded="true" />
-            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2279,8 +2539,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
         </state>
       </provider>
@@ -2290,28 +2553,27 @@
         <state relative-caret-position="1734">
           <caret line="178" column="40" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
           <folding>
-            <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
             <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10209#11158#0" expanded="true" />
-            <element signature="e#11157#11158#0" expanded="true" />
-            <element signature="e#12683#13389#0" expanded="true" />
-            <element signature="e#13388#13389#0" expanded="true" />
-            <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#16111#16934#0" expanded="true" />
-            <element signature="e#16933#16934#0" expanded="true" />
-            <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#18442#19249#0" expanded="true" />
-            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2322,8 +2584,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
         </state>
       </provider>
@@ -2334,8 +2599,11 @@
           <caret line="430" column="32" selection-start-line="430" selection-start-column="32" selection-end-line="430" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
         </state>
       </provider>
@@ -2345,28 +2613,27 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
             <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10209#11158#0" expanded="true" />
-            <element signature="e#11157#11158#0" expanded="true" />
-            <element signature="e#12683#13389#0" expanded="true" />
-            <element signature="e#13388#13389#0" expanded="true" />
-            <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#16111#16934#0" expanded="true" />
-            <element signature="e#16933#16934#0" expanded="true" />
-            <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#18442#19249#0" expanded="true" />
-            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2384,8 +2651,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
         </state>
       </provider>
@@ -2395,28 +2665,27 @@
         <state relative-caret-position="2006">
           <caret line="158" column="34" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="34" />
           <folding>
-            <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
             <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10209#11158#0" expanded="true" />
-            <element signature="e#11157#11158#0" expanded="true" />
-            <element signature="e#12683#13389#0" expanded="true" />
-            <element signature="e#13388#13389#0" expanded="true" />
-            <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#16111#16934#0" expanded="true" />
-            <element signature="e#16933#16934#0" expanded="true" />
-            <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#18442#19249#0" expanded="true" />
-            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2427,8 +2696,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
         </state>
       </provider>
@@ -2465,27 +2737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="462" column="22" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/jars/classes.jar!/com/google/android/gms/maps/model/LatLng.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar!/com/google/android/gms/location/Geofence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -2531,45 +2782,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceDbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar!/com/google/android/gms/location/Geofence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-25/android.jar!/android/os/Build.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/db/GeofenceStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/GeofenceTransitionsIntentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+        <state relative-caret-position="484">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1522692142009" expanded="false" signature="23632:23830" ph="(mediaPlayer) → {" />
-            <marker date="1522692142009" expanded="false" signature="23957:24008" ph="}" />
+            <element signature="method#GeofenceTransitionsIntentService#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#setContext#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <element signature="method#getTransitionString#0;class#GeofenceTransitionsIntentService#0" expanded="false" />
+            <marker date="1522773787665" expanded="false" signature="22255:22453" ph="(mediaPlayer) → {" />
+            <marker date="1522773787665" expanded="false" signature="22580:22631" ph="}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar!/com/google/android/gms/location/GeofencingRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/jars/classes.jar!/com/google/android/gms/maps/model/LatLng.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hrupin/samples/androidgeofencessample/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2312">
-          <caret line="92" column="39" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
+        <state relative-caret-position="213">
+          <caret line="380" column="10" selection-start-line="380" selection-start-column="10" selection-end-line="380" selection-end-column="10" />
           <folding>
-            <element signature="method#deleteDir#0;class#MainActivity#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="method#buildGoogleApiClient#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionFailed#0;class#MainActivity#0" expanded="false" />
             <element signature="method#onConnectionSuspended#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencingRequest#0;class#MainActivity#0" expanded="false" />
             <element signature="method#logSecurityException#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getGeofencePendingIntent#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11640#11687#0" expanded="true" />
+            <element signature="e#11764#11810#0" expanded="true" />
+            <element signature="e#11856#11903#0" expanded="true" />
+            <element signature="method#onMapReady#0;class#MainActivity#0" expanded="false" />
             <element signature="method#initMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#10209#11158#0" expanded="true" />
-            <element signature="e#11157#11158#0" expanded="true" />
-            <element signature="e#12683#13389#0" expanded="true" />
-            <element signature="e#13388#13389#0" expanded="true" />
-            <element signature="method#reloadMapMarkers#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#13117#14066#0" expanded="true" />
+            <element signature="e#13467#13504#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#15503#16209#0" expanded="true" />
+            <element signature="e#16208#16209#0" expanded="true" />
             <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onMapClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#16111#16934#0" expanded="true" />
-            <element signature="e#16933#16934#0" expanded="true" />
-            <element signature="method#addMarker#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getNewGeofenceNumber#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onInfoWindowClick#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#18442#19249#0" expanded="true" />
-            <element signature="e#19248#19249#0" expanded="true" />
+            <element signature="e#19845#20668#0" expanded="true" />
+            <element signature="e#20667#20668#0" expanded="true" />
+            <element signature="e#22176#22983#0" expanded="true" />
+            <element signature="e#22982#22983#0" expanded="true" />
           </folding>
         </state>
       </provider>

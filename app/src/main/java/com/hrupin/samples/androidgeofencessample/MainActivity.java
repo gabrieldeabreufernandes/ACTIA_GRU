@@ -2,6 +2,7 @@ package com.hrupin.samples.androidgeofencessample;
 
 import android.Manifest;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -13,6 +14,7 @@ import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -23,6 +25,7 @@ import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListe
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.Geofence;
+import com.google.android.gms.location.GeofencingEvent;
 import com.google.android.gms.location.GeofencingRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
@@ -60,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements
     private Geofence buffGeofence2 = null;
     private Geofence buffGeofence3 = null;
 
+    GeofencingEvent geofencingEven;
+
     GeofenceTransitionsIntentService geoFence = null;
     //GPSTracker gps = null;//new GPSTracker(this);
 
@@ -82,6 +87,16 @@ public class MainActivity extends AppCompatActivity implements
     public void clearApplicationData() {
         Log.d(TAG, "clearApplicationData Running...");
         File cache = getCacheDir();
+        /*
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            File Data = getFilesDir();// DataDir();
+            Log.d(TAG, "getDataDir Running...");
+        }*/
+
+        File Data = getFilesDir();
+        Log.d(TAG, "Data"+Data);
+        deleteDir(Data);
+
         Log.d(TAG, "cache = " +cache);
         File appDir = new File(cache.getParent());
         Log.d(TAG, "appDir = " +appDir);
@@ -126,7 +141,6 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void onStart() {
         super.onStart();
-
         clearApplicationData();
         mGoogleApiClient.connect();
         //
@@ -147,7 +161,8 @@ public class MainActivity extends AppCompatActivity implements
     protected void onStop() {
         Log.d(TAG, "onStop Running...");
         super.onStop();
-        tryReset("0");
+        unloadMarkers();
+         tryReset("0");
         tryReset("1");
         tryReset("2");
         mGoogleApiClient.disconnect();
@@ -188,11 +203,21 @@ public class MainActivity extends AppCompatActivity implements
         final double latGar = -23.428351;
         final double lonGar = -46.493306;
 
-        tryLoad(latT1, lonT1, 0);
-        tryLoad(latT2, lonT2, 1);
-        tryLoad(latT3, lonT3, 2);
-        tryLoad(latGar, lonGar, 3);
-        //tryLoad(actLa1, actLo1, 3);
+        //tryLoad(latT1, lonT1, 0);
+        //tryLoad(latT2, lonT2, 1);
+        //tryLoad(latT3, lonT3, 2);
+        //tryLoad(latGar, lonGar, 3);
+
+        //tryReset("0");
+        //tryReset("1");
+        //tryReset("2");
+        //tryReset("3");
+        unloadMarkers();
+
+        tryLoad(actLa1, actLo1, "0");
+        tryLoad(actLa1, actLo1, "1");
+        tryLoad(actLa1, actLo1, "2");
+        tryLoad(actLa1, actLo1, "3");
     }
 
     @Override
@@ -236,9 +261,53 @@ public class MainActivity extends AppCompatActivity implements
         }
         geoFence.setContext(this);
 
+//TEST////////////////////
+        /*
+        GeofencingEvent geofencingEvent = GeofencingEvent.fromIntent(intent);
+        List triggeringGeofences = geofencingEvent.getTriggeringGeofences();
+        int geofenceTransition = geofencingEvent.getGeofenceTransition();
+        String geofenceTransitionDetails = getGeofenceTransitionDetails(this, geofenceTransition, triggeringGeofences);
+        Log.i("GAAAAAAAAAAAAAAAAAAAAR", "geofenceTransitionDetails:"+ geofenceTransitionDetails + "!");
+        String geofenceCurrent = geofenceTransitionDetails;
+        Log.i("GAAAAAAAAAAAAAAAAAAAAR","this.geofenceCurrent:"+geofenceCurrent);*/
 
         return PendingIntent.getService(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
+
+    private String getGeofenceTransitionDetails(
+            Context context,
+            int geofenceTransition,
+            List<Geofence> triggeringGeofences) {
+
+        String geofenceTransitionString = getTransitionString(geofenceTransition);
+        ArrayList triggeringGeofencesIdsList = new ArrayList();
+
+        for (Geofence geofence : triggeringGeofences) {
+            triggeringGeofencesIdsList.add(geofence.getRequestId());
+            String Buff = geofence.getRequestId();
+            Log.i("GAAAAAAFR", "Buff:"+Buff);
+            tryReset(Buff);
+        }
+        String triggeringGeofencesIdsString = TextUtils.join(", ",  triggeringGeofencesIdsList);
+        Log.i("GAAAAAAAAAAAAAAR", "triggeringGeofencesIdsString: "+triggeringGeofencesIdsString);
+        return geofenceTransitionString + ": " + triggeringGeofencesIdsString;
+        //MapView mapView = (MapView) findViewById(R.id.map_view) ;
+        //mapView.setClickable(true) ;
+        //int measure = mapView.getMeasuredState();
+    }
+
+    private String getTransitionString(int transitionType) {
+        switch (transitionType) {
+            case Geofence.GEOFENCE_TRANSITION_ENTER:
+                return getString(R.string.geofence_transition_entered);
+            case Geofence.GEOFENCE_TRANSITION_EXIT:
+                return getString(R.string.geofence_transition_exited);
+            default:
+                return getString(R.string.unknown_geofence_transition);
+        }
+    }
+//END TEST////////////////////
+
 
     @Override
     public void onMapReady(GoogleMap map) {
@@ -263,6 +332,7 @@ public class MainActivity extends AppCompatActivity implements
 
 
     private void tryReset(final String ID){
+        Log.e(TAG, "tryReset running...");
         try {
             List<String> idList = new ArrayList<>();
             idList.add(ID);
@@ -270,7 +340,7 @@ public class MainActivity extends AppCompatActivity implements
                 @Override
                 public void onResult(@NonNull Status status) {
                     if (status.isSuccess()) {
-                        Log.e(TAG, "Not success in onResult!!!");
+                        Log.d(TAG, "Not success in onResult!!!");
                         GeofenceStorage.removeGeofence(ID);
                         Toast.makeText(MainActivity.this, getString(R.string.geofences_removed), Toast.LENGTH_SHORT).show();
                         reloadMapMarkers();
@@ -288,13 +358,10 @@ public class MainActivity extends AppCompatActivity implements
         }
     }
 
-    //private void tryLoad(){
-    private void tryLoad(final Double lat, final Double lon, int cont){
+    private void tryLoad(final Double lat, final Double lon, String cont){
 
-        //final double lat = -30.007741;//-23.429979;
-        //final double lon = -51.204438;//-46.493521;
-
-        final String key = getNewGeofenceNumber() + "";
+        //final String key = getNewGeofenceNumber() + "";
+        final String key = cont;
         final long expTime = System.currentTimeMillis() + GEOFENCE_EXPIRATION_IN_MILLISECONDS;
         //addMarker(key, latLng);
 
@@ -310,13 +377,14 @@ public class MainActivity extends AppCompatActivity implements
                         Geofence.GEOFENCE_TRANSITION_EXIT)
                 .build();
 
+        /*
         if(cont == 0){
             this.buffGeofence1 = geofence;
         }else if(cont == 1){
             this.buffGeofence2 = geofence;
         }else if(cont == 2){
             this.buffGeofence3 = geofence;
-        }
+        }*/
         //String requestID = geofence. getRequestId();
         try {
             LocationServices.GeofencingApi.addGeofences(
@@ -356,6 +424,23 @@ public class MainActivity extends AppCompatActivity implements
             }
         }
     }
+
+    private void unloadMarkers() {
+        googleMap.clear();
+        try (Cursor cursor = GeofenceStorage.getCursor()) {
+            while (cursor.moveToNext()) {
+                long expires = Long.parseLong(cursor.getString(cursor.getColumnIndex(GeofenceContract.GeofenceEntry.COLUMN_NAME_EXPIRES)));
+                if(System.currentTimeMillis() < expires) {
+                    String key = cursor.getString(cursor.getColumnIndex(GeofenceContract.GeofenceEntry.COLUMN_NAME_KEY));
+                    double lat = Double.parseDouble(cursor.getString(cursor.getColumnIndex(GeofenceContract.GeofenceEntry.COLUMN_NAME_LAT)));
+                    double lng = Double.parseDouble(cursor.getString(cursor.getColumnIndex(GeofenceContract.GeofenceEntry.COLUMN_NAME_LNG)));
+                    //addMarker(key, new LatLng(lat, lng));
+                    tryReset(key);
+                }
+            }
+        }
+    }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {

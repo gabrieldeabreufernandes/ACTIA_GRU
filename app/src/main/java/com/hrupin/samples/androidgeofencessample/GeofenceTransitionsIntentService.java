@@ -72,19 +72,6 @@ public class  GeofenceTransitionsIntentService extends IntentService implements 
         mContext = null;
         mPlayer = new MusicPlayer();
     }
-    /*
-    public void setGeoStorage(GeofenceStorage geoStoreage) {
-        Log.i(TAG, "Tryng setGeoStorage ");
-
-        if (gps == null){
-            //this.gps = new GPSTracker(ctx.getApplicationContext());
-            Log.i(TAG, "Seting Storage...");
-            this.geofenceStorage = geoStoreage;//.getApplicationContext();
-            //this.geofenceStorage
-        }else{
-            Log.i(TAG, "Storage already seted!");
-        }
-    }*/
 
     public void setContext(Context ctx) {
         //if (gps == null){
@@ -100,11 +87,9 @@ public class  GeofenceTransitionsIntentService extends IntentService implements 
 
     @Override
     protected void onHandleIntent(Intent intent) {
-
         Log.i(TAG, "GAAAAFR:: onHandleIntent running");
 
         GeofencingEvent geofencingEvent = GeofencingEvent.fromIntent(intent);
-        //Toast.makeText(mContext, "onHandleIntent", Toast.LENGTH_LONG).show();
 
         if (geofencingEvent.hasError()) {
             String errorMessage = getErrorString(this, geofencingEvent.getErrorCode());
@@ -127,8 +112,6 @@ public class  GeofenceTransitionsIntentService extends IntentService implements 
 
             this.gFenceType = geofenceTransition;
 
-            Log.i("GAAAAAAAAAAAAAAAAAAAAR", "GEOFENCE_TRANSITION_ENTER !!!");
-
             // Get the geofences that were triggered. A single event can trigger
             // multiple geofences.
             List triggeringGeofences = geofencingEvent.getTriggeringGeofences();
@@ -140,27 +123,6 @@ public class  GeofenceTransitionsIntentService extends IntentService implements 
             Log.i("GAAAAAAAAAAAAAAAAAAAAR", "geofenceTransitionDetails:"+ geofenceTransitionDetails + "!");
             this.geofenceCurrent = geofenceTransitionDetails;
             Log.i("GAAAAAAAAAAAAAAAAAAAAR","this.geofenceCurrent:"+this.geofenceCurrent);
-
-            /*
-            if(gps != null){
-                Log.d(TAG, "gps OK ");
-                // verifica ele
-                if (gps.canGetLocation()) {
-                    // passa sua latitude e longitude para duas variaveis
-                    this.latitude = gps.getLatitude();
-                    this.longitude = gps.getLongitude();
-                    // e mostra no Toast
-                    //Toast.makeText(getApplicationContext(), "Sua localização - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-                    Log.d(TAG, "LAT: "+latitude);
-                    Log.d(TAG, "LONG: "+longitude);
-                }else{
-                    Log.d(TAG, "can NOT GetLocation ");
-                }
-
-            }else{
-                Log.d(TAG, "gps NOT OK ");
-            }
-            */
 
             // Send notification and log the transition details.
             sendNotification(geofenceTransitionDetails);
@@ -174,6 +136,7 @@ public class  GeofenceTransitionsIntentService extends IntentService implements 
             Context context,
             int geofenceTransition,
             List<Geofence> triggeringGeofences) {
+        Log.d(TAG,"getGeofenceTransitionDetails running...");
 
         String geofenceTransitionString = getTransitionString(geofenceTransition);
         ArrayList triggeringGeofencesIdsList = new ArrayList();
